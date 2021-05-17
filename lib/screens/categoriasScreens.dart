@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:navegacao/data/dummy_data.dart';
 
 class CategoriaScreen extends StatelessWidget {
   @override
@@ -10,6 +11,7 @@ class CategoriaScreen extends StatelessWidget {
         crossAxisSpacing: 20,
         mainAxisSpacing: 20,
       ),
+      children: [],
     );
   }
 }
