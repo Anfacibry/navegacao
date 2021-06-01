@@ -11,7 +11,19 @@ class CategoriaItem extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
+      padding: EdgeInsets.all(10),
       child: Text(categoria.title!),
+      decoration: BoxDecoration(
+        borderRadius: BorderRadius.circular(20),
+        gradient: LinearGradient(
+          colors: [
+            categoria.color!.withOpacity(0.4),
+            categoria.color!,
+          ],
+          begin: Alignment.topLeft, //do topo esquerdo
+          end: Alignment.bottomRight, //para o baixo direito
+        ),
+      ),
     );
   }
 }
