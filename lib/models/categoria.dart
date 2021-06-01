@@ -6,7 +6,7 @@ class Categoria {
   final Color? color;
 
   Categoria({
-    @required this.id,
+    this.id,
     @required this.title,
     @required this.color,
   });
