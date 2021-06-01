@@ -11,7 +11,7 @@ class CategoriaItem extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: EdgeInsets.all(10),
+      padding: const EdgeInsets.all(10),
       child: Text(categoria.title!),
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(20),
@@ -20,8 +20,8 @@ class CategoriaItem extends StatelessWidget {
             categoria.color!.withOpacity(0.4),
             categoria.color!,
           ],
-          begin: Alignment.topLeft, //do topo esquerdo
-          end: Alignment.bottomRight, //para o baixo direito
+          begin: Alignment.topRight, //do topo esquerdo
+          end: Alignment.bottomLeft, //para o baixo direito
         ),
       ),
     );

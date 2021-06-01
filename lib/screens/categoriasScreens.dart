@@ -8,9 +8,13 @@ class CategoriaScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         centerTitle: true,
-        title: Text("Vamos conzinhar!"),
+        title: Text(
+          "Vamos conzinhar!",
+          style: Theme.of(context).textTheme.headline6,
+        ),
       ),
       body: GridView(
+        padding: const EdgeInsets.all(10),
         gridDelegate: SliverGridDelegateWithMaxCrossAxisExtent(
           maxCrossAxisExtent: 200,
           childAspectRatio: 2 / 1,
