@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:navegacao/models/categoria.dart';
 
-List<Categoria> dummyCatgorias = [
+final List<Categoria> dummyCatgorias = [
   Categoria(
     id: "c1",
     title: "Italiano",
