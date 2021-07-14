@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:navegacao/models/categoria.dart';
 import 'package:navegacao/models/meal.dart';
 
-List<Categoria> listaCategorias = [
+const List<Categoria> LISTA_CATEGORIAS = [
   Categoria(
     id: 'c1',
     title: 'Italiano',
@@ -55,7 +55,7 @@ List<Categoria> listaCategorias = [
   ),
 ];
 
-var listaMeals = [
+const List<Meal> LISTA_MEALS = [
   Meal(
     id: 'm1',
     categories: ['c1', 'c2'],
