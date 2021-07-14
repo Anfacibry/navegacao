@@ -5,8 +5,8 @@ class Categoria {
   final String? title;
   final Color? color;
 
-  Categoria({
-    this.id,
+  const Categoria({
+    @required this.id,
     @required this.title,
     @required this.color,
   });
