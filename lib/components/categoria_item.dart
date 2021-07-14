@@ -13,7 +13,7 @@ class CategoriaItem extends StatelessWidget {
     Navigator.of(context).push(
       MaterialPageRoute(
         builder: (_) {
-          return CategoriaMailsScreens();
+          return CategoriaMailsScreens(categoria);
         },
       ),
     );
