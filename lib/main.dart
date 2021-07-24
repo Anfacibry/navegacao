@@ -2,6 +2,7 @@ import 'dart:ui';
 
 import 'package:flutter/material.dart';
 import 'package:navegacao/screens/categoriasScreens.dart';
+import 'package:navegacao/screens/meal_detail_screen.dart';
 import 'package:navegacao/utils/rotas_nomeadas.dart';
 
 void main() => runApp(MyApp());
@@ -32,6 +33,7 @@ class MyApp extends StatelessWidget {
         initialRoute: AppRotas.HOME,
         routes: {
           AppRotas.HOME: (ctx) => CategoriaScreen(),
+          AppRotas.MEAL_DETAIL: (ctx) => MealDetailScreen(),
         });
   }
 }
