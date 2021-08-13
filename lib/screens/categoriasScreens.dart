@@ -5,26 +5,17 @@ import 'package:navegacao/data/dummy_data.dart';
 class CategoriaScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        centerTitle: true,
-        title: Text(
-          "Vamos conzinhar!",
-          style: Theme.of(context).textTheme.headline6,
-        ),
+    return GridView(
+      padding: const EdgeInsets.all(10),
+      gridDelegate: SliverGridDelegateWithMaxCrossAxisExtent(
+        maxCrossAxisExtent: 200,
+        childAspectRatio: 2 / 1,
+        crossAxisSpacing: 20,
+        mainAxisSpacing: 20,
       ),
-      body: GridView(
-        padding: const EdgeInsets.all(10),
-        gridDelegate: SliverGridDelegateWithMaxCrossAxisExtent(
-          maxCrossAxisExtent: 200,
-          childAspectRatio: 2 / 1,
-          crossAxisSpacing: 20,
-          mainAxisSpacing: 20,
-        ),
-        children: LISTA_CATEGORIAS.map((cat) {
-          return CategoriaItem(cat);
-        }).toList(),
-      ),
+      children: LISTA_CATEGORIAS.map((cat) {
+        return CategoriaItem(cat);
+      }).toList(),
     );
   }
 }
