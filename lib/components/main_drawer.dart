@@ -1,9 +1,10 @@
 import "package:flutter/material.dart";
+import 'package:navegacao/utils/rotas_nomeadas.dart';
 
 class MainDrawer extends StatelessWidget {
   const MainDrawer({Key? key}) : super(key: key);
 
-  Widget _createItem(IconData icon, String label) {
+  Widget _createItem(IconData icon, String label, void Function() fun) {
     return ListTile(
       leading: Icon(
         icon,
@@ -17,7 +18,7 @@ class MainDrawer extends StatelessWidget {
           fontWeight: FontWeight.bold,
         ),
       ),
-      onTap: () {},
+      onTap: fun,
     );
   }
 
@@ -33,8 +34,16 @@ class MainDrawer extends StatelessWidget {
             child: Text("Vamos cozinhar"),
             alignment: AlignmentDirectional.center,
           ),
-          _createItem(Icons.restaurant, "Refeições"),
-          _createItem(Icons.settings, "Confirgurações"),
+          _createItem(
+            Icons.restaurant,
+            "Refeições",
+            () => Navigator.of(context).pushNamed(AppRotas.HOME),
+          ),
+          _createItem(
+            Icons.settings,
+            "Confirgurações",
+            () => Navigator.of(context).pushNamed(AppRotas.CONFIGURACAO),
+          ),
         ],
       ),
     );
