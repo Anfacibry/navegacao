@@ -7,6 +7,13 @@ class Configuracao extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        leading: IconButton(
+          onPressed: () => Navigator.of(context).pop(),
+          icon: Icon(
+            Icons.arrow_back,
+          ),
+        ),
+        centerTitle: true,
         title: Text("Configuração"),
       ),
       body: Center(
