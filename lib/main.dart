@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:navegacao/screens/configuracao.dart';
 import 'package:navegacao/screens/meal_detail_screen.dart';
 import 'package:navegacao/screens/tab_screen.dart';
 import 'package:navegacao/utils/rotas_nomeadas.dart';
@@ -32,6 +33,7 @@ class MyApp extends StatelessWidget {
         routes: {
           AppRotas.HOME: (ctx) => TabsScreen(),
           AppRotas.MEAL_DETAIL: (ctx) => MealDetailScreen(),
+          AppRotas.CONFIGURACAO: (ctx) => Configuracao(),
         });
   }
 }
