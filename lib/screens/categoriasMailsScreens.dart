@@ -22,6 +22,12 @@ class CategoriaMailsScreens extends StatelessWidget {
         itemCount: categoriaMaels.length,
         itemBuilder: (ctx, index) => MealItem(categoriaMaels[index]),
       ),
+      floatingActionButton: FloatingActionButton(
+        child: Icon(Icons.favorite),
+        onPressed: () {
+          Navigator.of(context).pop(categoriaMaels);
+        },
+      ),
     );
   }
 }
