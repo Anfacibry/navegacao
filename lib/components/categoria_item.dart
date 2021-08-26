@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:navegacao/data/dummy_data.dart';
 import 'package:navegacao/models/categoria.dart';
 import 'package:navegacao/screens/categoriasMailsScreens.dart';
 
@@ -13,7 +14,7 @@ class CategoriaItem extends StatelessWidget {
     Navigator.of(context).push(
       MaterialPageRoute(
         builder: (_) {
-          return CategoriaMailsScreens(categoria);
+          return CategoriaMailsScreens(categoria, LISTA_MEALS);
         },
       ),
     );
